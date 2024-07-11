@@ -28,6 +28,25 @@ _installPackages() {
     sudo pacman --noconfirm -S "${toInstall[@]}";
 }
 
+_installPackagesYay() {
+    toInstall=();
+    for pkg; do
+        if [[ $(_isInstalledYay "${pkg}") == 0 ]]; then
+            echo ":: ${pkg} is already installed.";
+            continue;
+        fi;
+        toInstall+=("${pkg}");
+    done;
+
+    if [[ "${toInstall[@]}" == "" ]] ; then
+        # echo "All packages are already installed.";
+        return;
+    fi;
+
+    # printf "AUR packags not installed:\n%s\n" "${toInstall[@]}";
+    yay --noconfirm -S "${toInstall[@]}";
+}
+
 # Install Yay
 _installYay() {
     if sudo pacman -Qs yay > /dev/null ; then
@@ -45,3 +64,4 @@ _installYay() {
         echo "yay has been installed successfully."
     fi
 }
+

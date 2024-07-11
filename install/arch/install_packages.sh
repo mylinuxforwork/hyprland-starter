@@ -33,4 +33,4 @@ installer_yay=(
 
 # PLEASE NOTE: Add more packages at the end of the following command
 _installPackages "${installer_packages[@]}";
-_installYay "${installer_yay[@]}";
+_installPackagesYay "${installer_yay[@]}";
