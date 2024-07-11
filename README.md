@@ -33,7 +33,7 @@ sudo pacman -S git
 cd ~/Downloads
 
 # Clone the packages
-git clone --depth 1 https://gitlab.com/stephan-raabe/hyprland-starter.git
+git clone --depth 1 https://github.com/mylinuxforwork/hyprland-starter.git
 
 # You can also download the files and unzip it into your home folder
 
