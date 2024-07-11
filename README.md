@@ -4,6 +4,8 @@ The ML4W Hyprland Starter package is the perfect starting point for your Hyprlan
 
 To make your start with Hyprland as simple as possible, you can find here an easy to use installation and configuration script.
 
+![image](https://github.com/mylinuxforwork/hyprland-starter/assets/145253254/0e6b3bcd-7b60-4d11-a7c4-7fc3ad708adf)
+
 ## Requirements
 
 Ths script supports the following distributions:
