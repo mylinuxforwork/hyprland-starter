@@ -1,4 +1,4 @@
-# ML4W Hyprland Starter 1.0 BETA1
+# ML4W Hyprland Starter 1.0 RC1
 
 > This project is currently under extrem development preparing the official launch on the 15th of July!!!
 
@@ -25,26 +25,9 @@ Just copy/enter the following command into your terminal.
 bash <(curl -s https://raw.githubusercontent.com/mylinuxforwork/hyprland-starter/main/setup.sh)
 ```
 
-Or you clone the repository and start the installation with these commands:
+## Documentation (Wiki)
 
-```
-# git is required
-sudo pacman -S git
-
-# Change into your Downloads directory
-cd ~/Downloads
-
-# Clone the packages
-git clone --depth 1 https://github.com/mylinuxforwork/hyprland-starter.git
-
-# You can also download the files and unzip it into your home folder
-
-# Change into the folder
-cd hyprland-starter
-
-# Start the script
-./install.sh
-```
+You can find the complete documentation of the ML4W Dotfiles in the Wiki. <b>[Open the Wiki here](https://github.com/mylinuxforwork/hyprland-starter/wiki)</b>
 
 ## Packages
 
