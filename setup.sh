@@ -168,4 +168,4 @@ echo ":: Installation files cloned into Downloads folder"
 cd hyprland-starter
 
 # Start the script
-# ./install.sh
+./install.sh
