@@ -1,4 +1,6 @@
-# ML4W Hyprland Starter 1.0 
+# ML4W Hyprland Starter 1.0 BETA1
+
+> This project is currently under extrem development preparing the official launch on the 15th of July!!!
 
 To make your start with Hyprland easy, you can find here a basic installation and configuration script.
 The default configuration files are already available in the corresponding folder.
