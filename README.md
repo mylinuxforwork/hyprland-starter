@@ -22,7 +22,7 @@ You can install the Hyprland Starter on real hardware (bare metal) or test it fi
 Just copy/enter the following command into your terminal.
 
 ```
-bash <(curl -s https://github.com/mylinuxforwork/hyprland-starter/-/raw/main/setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/mylinuxforwork/hyprland-starter/main/setup.sh)
 ```
 
 Or you clone the repository and start the installation with these commands:
