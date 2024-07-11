@@ -13,6 +13,11 @@ if [ ! -d ~/.config/ml4w ] ;then
             sed -i -e "s/$SEARCH/$REPLACE/g" ~/ml4w/$version/.config/hypr/conf/environments.conf
 
             echo ":: Environment settings set for KVM cursor support."
+        elif [ $? -eq 130 ]; then
+            echo ":: Installation canceled"
+            exit
+        else
+            echo ":: KVM configuration skipped"
         fi
     fi
 fi

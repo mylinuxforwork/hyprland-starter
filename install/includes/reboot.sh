@@ -1,7 +1,14 @@
 echo -e "${GREEN}"
-figlet "Done"
+figlet "Reboot"
 echo -e "${NONE}"
-
-echo "Open ~/.config/hypr/hyprland.conf to check your new initial Hyprland configuration."
+echo "A reboot of your system is recommended."
 echo
-echo "DONE! Please reboot your system!"
+if gum confirm "Do you want to reboot your system now?" ;then
+    gum spin --spinner dot --title "Rebooting now..." -- sleep 3
+    systemctl reboot
+elif [ $? -eq 130 ]; then
+    exit 130
+else
+    echo ":: Reboot skipped"
+fi
+echo ""

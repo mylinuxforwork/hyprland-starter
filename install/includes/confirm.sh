@@ -13,9 +13,10 @@ if gum confirm "DO YOU WANT TO START NOW?" ;then
     echo ":: Installing Hyprland and required packages"
     echo
 elif [ $? -eq 130 ]; then
+    echo ":: Installation canceled"
     exit 130
 else
     echo
-    echo ":: Installation canceled."
+    echo ":: Installation canceled"
     exit;
 fi

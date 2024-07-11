@@ -47,4 +47,9 @@ if gum confirm "Do you want to create a backup now" ;then
             cp ~/$df ~/ml4w/backup/$df
         fi
     done
+elif [ $? -eq 130 ]; then
+    echo ":: Installation canceled"
+    exit 130
+else
+    echo ":: Backup skipped"
 fi
