@@ -21,12 +21,16 @@ installer_packages=(
     "ttf-fira-sans" 
     "ttf-fira-code" 
     "ttf-firacode-nerd"
-    "wlogout" 
     "fuse2"
     "gtk4"
     "libadwaita"
     "jq"
 )
 
+installer_yay=(
+    "wlogout" 
+)
+
 # PLEASE NOTE: Add more packages at the end of the following command
 _installPackages "${installer_packages[@]}";
+_installYay "${installer_yay[@]}";
