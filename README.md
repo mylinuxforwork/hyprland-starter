@@ -6,6 +6,8 @@ To make your start with Hyprland as simple as possible, you can find here an eas
 
 ![image](https://github.com/mylinuxforwork/hyprland-starter/assets/145253254/0e6b3bcd-7b60-4d11-a7c4-7fc3ad708adf)
 
+Watch on YouTube: https://youtu.be/jc-vFSXpZF4
+
 ## Requirements
 
 Ths script supports the following distributions:
