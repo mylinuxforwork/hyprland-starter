@@ -1,4 +1,4 @@
-# ML4W Hyprland Starter 1.0
+# ML4W Hyprland Starter 1.0.0
 
 The ML4W Hyprland Starter package is the perfect starting point for your Hyprland customization experiments.
 
