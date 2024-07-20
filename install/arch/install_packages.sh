@@ -25,6 +25,7 @@ installer_packages=(
     "gtk4"
     "libadwaita"
     "jq"
+    "python-gobject"
 )
 
 installer_yay=(
