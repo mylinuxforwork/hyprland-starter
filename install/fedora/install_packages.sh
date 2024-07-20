@@ -19,6 +19,8 @@ installer_packages=(
     "mozilla-fira-sans-fonts"
     "fira-code-fonts"
     "wlogout"
+    "python3-gobject" 
+    "gtk4"
 )
 
 # PLEASE NOTE: Add more packages at the end of the following command
