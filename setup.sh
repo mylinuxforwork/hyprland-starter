@@ -4,13 +4,25 @@
 # Functions
 # ----------------------------------------------------- 
 
+distro=""
+installer=""
+
 # Detect Linux Distribution
 _detectDistro() {
     if [ -f /etc/fedora-release ] ;then
-        echo "fedora"
+        distro="fedora"
+        installer="fedora"
+        echo ":: Installer for Fedora"
+    fi
+    if [ -f /etc/nobara-release ] ;then
+        distro="nobara"
+        installer="fedora"
+        echo ":: Installer for Nobara"
     fi
     if [ -f /etc/arch-release ] ;then
-        echo "arch"
+        distro="arch"
+        installer="arch"
+        echo ":: Installer for Arch"
     fi
 }
 
@@ -131,21 +143,47 @@ while true; do
 done
 
 # ----------------------------------------------------- 
+# Detect Distribution
+# ----------------------------------------------------- 
+_detectDistro
+if [ -z $distro ] ;then
+    echo "ERROR: Your Linux distribution could not be detected or is not supported."
+    echo
+    echo "Please select one of the following installation profiles or cancel the installation."
+    echo
+    version=$(gum choose "arch" "fedora" "cancel")
+    if [ "$version" == "arch" ] ;then
+        echo ":: Installer for Arch"
+        distro="arch"
+        installer="arch"
+    elif [ "$version" == "rolling-release" ] ;then
+        echo ":: Installer for Fedora"
+        distro="fedora"
+        installer="fedora"    
+    elif [ "$version" == "cancel" ] ;then
+        echo ":: Setup canceled"
+        exit 130    
+    else
+        echo ":: Setup canceled"
+        exit 130
+    fi
+fi
+
+# ----------------------------------------------------- 
 # Installation for Fedora
 # ----------------------------------------------------- 
-if [ $(_detectDistro) == "fedora" ] ;then
-    echo ":: Installing on Fedora"
+if [ "$installer" == "fedora" ] ;then
     _installPackagesFedora "${installer_packages_fedora[@]}";
 fi
 
 # ----------------------------------------------------- 
 # Installation for Arch
 # ----------------------------------------------------- 
-if [ $(_detectDistro) == "arch" ] ;then
-    echo ":: Installing on Arch"
+if [ "$installer" == "arch" ] ;then
     _installPackagesPacman "${installer_packages_arch[@]}";
 fi
 
+# Create Downloads folder if not exists
 if [ ! -d ~/Downloads ] ;then
     mkdir ~/Downloads
     echo ":: Downloads folder created"

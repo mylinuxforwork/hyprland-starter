@@ -1,4 +1,4 @@
-# ML4W Hyprland Starter 1.0.0
+# ML4W Hyprland Starter 1.0.1
 
 The ML4W Hyprland Starter package is the perfect starting point for your Hyprland customization experiments.
 
@@ -13,6 +13,7 @@ Watch on YouTube: https://youtu.be/jc-vFSXpZF4
 Ths script supports the following distributions:
 * Arch Linux (+ Arch Linux based distros e.g., EndeavourOS, Manjaro, ...)
 * Fedora Linux
+* Nobara Linux
 * more to come soon...
 
 ## Documentation (Wiki)

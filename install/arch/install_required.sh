@@ -11,7 +11,7 @@ installer_packages=(
     "git"
 )
 
-echo ":: Installing on Arch"
+echo ":: Installing on $distro"
 
 # Synchronizing package databases
 sudo pacman -Sy
