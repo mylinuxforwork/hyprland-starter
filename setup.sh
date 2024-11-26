@@ -199,8 +199,11 @@ if [ -d ~/Downloads/hyprland-starter ] ;then
 fi
 
 # Clone the packages
-git clone --depth 1 https://github.com/waltosoft/billy-hyprland.git/use-nautilus
+git clone --depth 1 https://github.com/waltosoft/billy-hyprland.git
 echo ":: Installation files cloned into Downloads folder"
+
+git checkout use-nautilus
+echo ":: Changed to use-nautilus branch"
 
 # Change into the folder
 cd billy-hyprland
