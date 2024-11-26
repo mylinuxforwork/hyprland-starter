@@ -199,11 +199,15 @@ if [ -d ~/Downloads/hyprland-starter ] ;then
 fi
 
 # Clone the packages
-git clone --depth 1 https://github.com/mylinuxforwork/hyprland-starter.git
+git clone --depth 1 https://github.com/waltosoft/billy-hyprland.git
 echo ":: Installation files cloned into Downloads folder"
 
 # Change into the folder
 cd hyprland-starter
 
+git checkout use-nautilus
+
 # Start the script
 ./install.sh
+
+
