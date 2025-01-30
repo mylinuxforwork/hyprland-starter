@@ -26,6 +26,9 @@ installer_packages=(
     "libadwaita"
     "jq"
     "python-gobject"
+    "brightnessctl"
+    "wireplumber"
+    "hyprcursor"
 )
 
 installer_yay=(
