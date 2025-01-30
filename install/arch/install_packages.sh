@@ -28,6 +28,7 @@ installer_packages=(
     "python-gobject"
     "brightnessctl"
     "wireplumber"
+    "hyprcursor"
 )
 
 installer_yay=(
