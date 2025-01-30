@@ -54,6 +54,10 @@ You can find all shipped configurations here: https://github.com/mylinuxforwork/
 
 The following custom key bindings are enabled (can be customized in ~/.config/hypr/hyprland.conf)
 
+- <kbd>F6</kbd> Volume Down
+- <kbd>F7</kbd> Volume Up
+- <kbd>F9</kbd> Brightness Down
+- <kbd>F10</kbd> Brightness Up
 - <kbd>SUPER</kbd> + <kbd>RETURN</kbd> to start terminal alacritty
 - <kbd>SUPER</kbd> + <kbd>Q</kbd> to quit an application
 - <kbd>SUPER</kbd> + <kbd>B</kbd> to start browser
