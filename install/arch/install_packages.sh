@@ -26,6 +26,8 @@ installer_packages=(
     "libadwaita"
     "jq"
     "python-gobject"
+    "wireplumber"
+    "brightnessctl"
 )
 
 installer_yay=(
