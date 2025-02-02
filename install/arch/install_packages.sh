@@ -26,6 +26,10 @@ installer_packages=(
     "libadwaita"
     "jq"
     "python-gobject"
+    "xdotool"
+    "brightnessctl"
+    "networkmanager"
+    "wireplumber"
 )
 
 installer_yay=(
