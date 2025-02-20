@@ -30,6 +30,10 @@ installer_packages=(
     "brightnessctl"
     "networkmanager"
     "wireplumber"
+    "grim"
+    "slurp"
+    "swappy"
+    "hyprpicker"
 )
 
 installer_yay=(
