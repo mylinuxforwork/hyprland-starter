@@ -1,38 +1,54 @@
-# ML4W Hyprland Starter 1.0.1
+# ML4W Hyprland Starter 2.0 BETA
 
-The ML4W Hyprland Starter package is the perfect starting point for your Hyprland customization experiments.
+> [!IMPORTANT]
+> These dotfiles are currently being revised and updated. This can lead to side effects during the installation or update.
 
-To make your start with Hyprland as simple as possible, you can find here an easy to use installation and configuration script.
+The ML4W Hyprland Starter package is the perfect starting point for your Hyprland customization experiments. The Hyprland Starter configuration works on all Linux distributions that support the dynamic tiling window manager Hyprland.
 
-![image](https://github.com/mylinuxforwork/hyprland-starter/assets/145253254/0e6b3bcd-7b60-4d11-a7c4-7fc3ad708adf)
-
-Watch on YouTube: https://youtu.be/jc-vFSXpZF4
-
-## Requirements
-
-Ths script supports the following distributions:
-* Arch Linux (+ Arch Linux based distros e.g., EndeavourOS, Manjaro, ...)
-* Fedora Linux
-* Nobara Linux
-* more to come soon...
-
-## Documentation (Wiki)
-
-You can find the complete documentation of the ML4W Dotfiles in the Wiki. <b>[Open the Wiki here](https://github.com/mylinuxforwork/hyprland-starter/wiki)</b>
+You can find configurations here: https://github.com/mylinuxforwork/hyprland-starter/tree/main/dotfiles
 
 ## Installation
 
-You can install the Hyprland Starter on real hardware (bare metal) or test it first in a Virtual Machine based on QEMU/KVM with activated 3D acceleration.
+You can install the ML4W Hyprland Starter easily with the Dotfiles Installer from an existing Window Manager or Desktop Environment.
 
-Just copy the following command into your terminal and execute.
+Dotfiles Installer Banner
 
-```
-bash <(curl -s https://raw.githubusercontent.com/mylinuxforwork/hyprland-starter/main/setup.sh)
-```
+Copy the following url into the Dotfiles Installer.
+
+https://raw.githubusercontent.com/mylinuxforwork/hyprland-starter/main/hyprland-starter.dotinst
+
+Please run the setup script offered by the Dotfiles Installer to install all dependencies. If your distribution is not supported, please install the following dependencies manually:
+
+- hyprland
+- waybar
+- rofi-wayland
+- alacritty
+- dunst
+- thunar
+- xdg-desktop-portal-hyprland
+- qt5-wayland
+- qt6-wayland
+- hyprpaper
+- hyprlock
+- firefox
+- ttf-font-awesome
+- vim
+- fastfetch
+- ttf-fira-sans
+- ttf-fira-code
+- ttf-firacode-nerd
+- jq
+- brightnessctl
+- networkmanager
+- wireplumber
 
 > Hyprland does not officially support NVIDIA hardware. But many users have reported a successful installation. Please read: https://wiki.hyprland.org/Nvidia/
 
-## Packages
+## Documentation (Wiki)
+
+You can find the complete documentation of the ML4W Starter in the Wiki. <b>[Open the Wiki here](https://github.com/mylinuxforwork/hyprland-starter/wiki)</b>
+
+## Dependencies
 
 The script will install the following packages and the corresponding configurations:
 
@@ -40,15 +56,13 @@ The script will install the following packages and the corresponding configurati
 - Status Bar: waybar 
 - Launcher: rofi-wayland 
 - Browser: Firefox
-- Terminal: alacritty 
+- Terminal: kitty
 - Notification Service: dunst 
 - File Manager: Thunar
 - xdg-desktop-portal-hyprland 
 - qt5-wayland 
 - qt6-wayland 
 - Lock screen: hyprlock
-
-You can find all shipped configurations here: https://github.com/mylinuxforwork/hyprland-starter/tree/main/dotfiles
 
 ## Key Bindings
 
