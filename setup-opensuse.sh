@@ -10,6 +10,7 @@ packages=(
     "git"
     "gum"    
     "hyprland"
+    "hyprland-devel"
     "waybar"
     "rofi-wayland"
     "alacritty"
