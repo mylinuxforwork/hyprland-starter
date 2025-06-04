@@ -141,6 +141,12 @@ gpgcheck=1
 gpgkey=https://repo.charm.sh/yum/gpg.key' | sudo tee /etc/yum.repos.d/charm.repo
 sudo yum install --assumeyes gum
 
+# Hyprland Settings App
+ml4w_app="com.ml4w.hyprlandsettings"
+ml4w_app_repo="hyprland-settings"
+echo ":: Installing $ml4w_app"
+bash -c "$(curl -s https://raw.githubusercontent.com/mylinuxforwork/$ml4w_app_repo/master/setup.sh)"
+
 # ----------------------------------------------------------
 # Completed
 # ----------------------------------------------------------

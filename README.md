@@ -1,4 +1,4 @@
-# ML4W Hyprland Starter 2.0 BETA
+# ML4W Hyprland Starter 2.0
 
 > [!IMPORTANT]
 > These dotfiles are currently being revised and updated. This can lead to side effects during the installation or update.
@@ -24,7 +24,7 @@ Please run the setup script offered by the Dotfiles Installer to install all dep
 - hyprland
 - waybar
 - rofi-wayland
-- alacritty
+- kitty
 - dunst
 - thunar
 - xdg-desktop-portal-hyprland

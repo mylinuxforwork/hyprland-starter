@@ -119,5 +119,15 @@ done
 # Packages
 _installPackages "${packages[@]}"
 
+# Hyprland Settings App
+ml4w_app="com.ml4w.hyprlandsettings"
+ml4w_app_repo="hyprland-settings"
+echo ":: Installing $ml4w_app"
+bash -c "$(curl -s https://raw.githubusercontent.com/mylinuxforwork/$ml4w_app_repo/master/setup.sh)"
+
+# ----------------------------------------------------------
+# Completed
+# ----------------------------------------------------------
+
 echo ":: Installation complete."
 echo ":: Ready to install the dotfiles with the Dotfiles Installer."
