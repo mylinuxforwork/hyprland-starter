@@ -12,7 +12,7 @@ packages=(
     "hyprland"
     "waybar"
     "rofi-wayland"
-    "alacritty"
+    "kitty"
     "dunst"
     "thunar"
     "xdg-desktop-portal-hyprland"
@@ -157,6 +157,12 @@ fi
 
 # Packages
 _installPackages "${packages[@]}"
+
+# Hyprland Settings App
+ml4w_app="com.ml4w.hyprlandsettings"
+ml4w_app_repo="hyprland-settings"
+echo ":: Installing $ml4w_app"
+bash -c "$(curl -s https://raw.githubusercontent.com/mylinuxforwork/$ml4w_app_repo/master/setup.sh)"
 
 # ----------------------------------------------------------
 # Completed
