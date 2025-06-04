@@ -11,7 +11,7 @@ packages=(
     "hyprland"
     "waybar"
     "rofi-wayland"
-    "alacritty"
+    "kitty"
     "dunst"
     "Thunar"
     "xdg-desktop-portal-hyprland"

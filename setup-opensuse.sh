@@ -13,7 +13,7 @@ packages=(
     "hyprland-devel"
     "waybar"
     "rofi-wayland"
-    "alacritty"
+    "kitty"
     "dunst"
     "thunar"
     "xdg-desktop-portal-hyprland"
