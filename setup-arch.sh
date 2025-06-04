@@ -32,6 +32,7 @@ packages=(
     "networkmanager"
     "wireplumber"
     "wlogout"
+    "flatpak"
 )
 
 # ----------------------------------------------------------
@@ -157,6 +158,12 @@ fi
 
 # Packages
 _installPackages "${packages[@]}"
+
+# Flathub
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+# Flatpaks
+flatpak install flathub org.flameshot.Flameshot
 
 # Hyprland Settings App
 ml4w_app="com.ml4w.hyprlandsettings"

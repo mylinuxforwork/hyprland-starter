@@ -141,6 +141,12 @@ gpgcheck=1
 gpgkey=https://repo.charm.sh/yum/gpg.key' | sudo tee /etc/yum.repos.d/charm.repo
 sudo yum install --assumeyes gum
 
+# Flathub
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+# Flatpaks
+flatpak install flathub org.flameshot.Flameshot
+
 # Hyprland Settings App
 ml4w_app="com.ml4w.hyprlandsettings"
 ml4w_app_repo="hyprland-settings"

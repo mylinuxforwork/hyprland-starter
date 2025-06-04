@@ -72,7 +72,7 @@ The script will install the following packages and the corresponding configurati
 
 The following custom key bindings are enabled (can be customized in ~/.config/hypr/hyprland.conf)
 
-- <kbd>SUPER</kbd> + <kbd>RETURN</kbd> to start terminal alacritty
+- <kbd>SUPER</kbd> + <kbd>RETURN</kbd> to start terminal
 - <kbd>SUPER</kbd> + <kbd>Q</kbd> to quit an application
 - <kbd>SUPER</kbd> + <kbd>B</kbd> to start browser
 - <kbd>SUPER</kbd> + <kbd>M</kbd> to exit Hyprland
