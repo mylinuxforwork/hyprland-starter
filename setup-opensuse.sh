@@ -124,7 +124,6 @@ _installPackages "${packages[@]}"
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Flatpaks
-flatpak install flathub org.flameshot.Flameshot
 
 # Hyprland Settings App
 ml4w_app="com.ml4w.hyprlandsettings"
