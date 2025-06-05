@@ -11,6 +11,7 @@ packages=(
     "gum"    
     "hyprland"
     "hyprland-devel"
+    "hyprland-qtutils"
     "waybar"
     "rofi-wayland"
     "kitty"
