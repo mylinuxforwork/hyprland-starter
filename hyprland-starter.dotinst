@@ -6,7 +6,7 @@
 	"author": "Stephan Raabe",
 	"homepage": "https://github.com/mylinuxforwork/hyprland-starter",
 	"dependencies": "https://github.com/mylinuxforwork/hyprland-starter",
-	"source": "https://github.com/mylinuxforwork/hyprland-starter",
+	"source": "https://github.com/mylinuxforwork/hyprland-starter.git",
 	"subfolder": "dotfiles",
 	"setupscript":"setup.sh",
 	"restore":[
