@@ -15,12 +15,13 @@ You can install the ML4W Hyprland Starter easily with the Dotfiles Installer fro
 
 [<img src="https://github.com/user-attachments/assets/9202fa55-83fa-4e9f-8804-06fb6404d128">](https://github.com/mylinuxforwork/dotfiles-installer)
 
+More information about the installation of the Dotfiles Installer here: https://github.com/mylinuxforwork/dotfiles-installer/wiki/01-Installation
+
 Copy the following url into the Dotfiles Installer.
 
 ```
 https://raw.githubusercontent.com/mylinuxforwork/hyprland-starter/main/hyprland-starter.dotinst
 ```
-
 Please run the setup script offered by the Dotfiles Installer to install all dependencies. If your distribution is not supported, please install the following dependencies manually:
 
 - hyprland
