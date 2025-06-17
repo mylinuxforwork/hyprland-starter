@@ -3,8 +3,8 @@
 # ----------------------------------------------------------
 # Packages
 # ----------------------------------------------------------
-
-source share/packages/arch.sh
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+source $SCRIPT_DIR/share/packages/arch.sh
 
 # ----------------------------------------------------------
 # Colors
@@ -129,9 +129,6 @@ fi
 
 # Packages
 _installPackages "${packages[@]}"
-
-# Flathub
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Flatpaks
 
