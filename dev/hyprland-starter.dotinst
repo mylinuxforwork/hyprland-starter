@@ -9,6 +9,9 @@
 	"source": "Projects/hyprland-starter",
 	"subfolder": "dotfiles",
 	"setupscript":"setup.sh",
+	"dev":{
+		"ignore":"input.conf"
+	},
 	"restore":[
 		{
 			"title":"ML4W Settings",
