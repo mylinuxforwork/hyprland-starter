@@ -13,7 +13,7 @@ You can find configurations here: https://github.com/mylinuxforwork/hyprland-sta
 
 You can install the ML4W Hyprland Starter easily with the Dotfiles Installer from an existing Window Manager or Desktop Environment.
 
-[<img src="https://github.com/user-attachments/assets/9202fa55-83fa-4e9f-8804-06fb6404d128">](https://github.com/mylinuxforwork/dotfiles-installer)
+<a href="https://mylinuxforwork.github.io/dotfiles-installer/" target="_blank"><img src="https://mylinuxforwork.github.io/dotfiles-installer/dotfiles-installer-badge.png" style="border:0;margin-bottom:10px"></a>
 
 More information about the installation of the Dotfiles Installer here: https://github.com/mylinuxforwork/dotfiles-installer/wiki/01-Installation
 
