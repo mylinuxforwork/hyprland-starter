@@ -55,13 +55,9 @@ _installPackages() {
             echo "${pkg} is already installed."
             continue
         fi
-        toInstall+=("${pkg}")
     done
-    if [[ "${toInstall[@]}" == "" ]]; then
-        return
-    fi
     printf "Package not installed:\n%s\n" "${toInstall[@]}"
-    sudo dnf install --assumeyes "${toInstall[@]}"
+    sudo dnf install --assumeyes "${pkg}"
 }
 
 # ----------------------------------------------------------
