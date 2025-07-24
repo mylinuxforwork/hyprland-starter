@@ -55,9 +55,9 @@ _installPackages() {
             echo "${pkg} is already installed."
             continue
         fi
+	    printf "Package not installed:\n%s\n" "${toInstall[@]}"
+	    sudo dnf install --assumeyes "${pkg}"
     done
-    printf "Package not installed:\n%s\n" "${toInstall[@]}"
-    sudo dnf install --assumeyes "${pkg}"
 }
 
 # ----------------------------------------------------------
