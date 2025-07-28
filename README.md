@@ -1,4 +1,4 @@
-# ML4W Hyprland Starter 2.0
+# ML4W Hyprland Starter 2.1
 
 > [!IMPORTANT]
 > These dotfiles are currently being revised and updated. This can lead to side effects during the installation or update.
