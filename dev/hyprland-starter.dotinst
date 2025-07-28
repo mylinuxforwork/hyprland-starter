@@ -2,13 +2,13 @@
 	"name": "ML4W Hyprland Starter DEV",
 	"id": "com.ml4w.hyprlandstarter.dev",
 	"description": "DEV Starter package for your Hyprland experiments",
-	"version":"2.0",
+	"version":"2.1",
 	"author": "Stephan Raabe",
 	"homepage": "https://github.com/mylinuxforwork/hyprland-starter",
 	"dependencies": "https://github.com/mylinuxforwork/hyprland-starter",
 	"source": "Projects/hyprland-starter",
 	"subfolder": "dotfiles",
-	"setupscript":"setup.sh",
+	"setupscript":"setup/setup.sh",
 	"dev":{
 		"ignore":"input.conf"
 	},

@@ -4,8 +4,31 @@
 # Packages
 # ----------------------------------------------------------
 
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-source share/packages/fedora.sh
+packages=(
+    "wget"
+    "unzip"
+    "git"
+    "hyprland"
+    "waybar"
+    "rofi-wayland"
+    "kitty"
+    "dunst"
+    "Thunar"
+    "xdg-desktop-portal-hyprland"
+    "qt5-qtwayland"
+    "qt6-qtwayland"
+    "hyprpaper"
+    "hyprlock"
+    "firefox"
+    "fontawesome-6-free-fonts"
+    "vim"
+    "vim-enhanced"
+    "python3-pip"
+    "fastfetch"
+    "mozilla-fira-sans-fonts"
+    "fira-code-fonts"
+    "wlogout"
+)
 
 # ----------------------------------------------------------
 # Colors
@@ -49,13 +72,12 @@ _isInstalled() {
 # ----------------------------------------------------------
 
 _installPackages() {
-    toInstall=()
     for pkg; do
         if [[ $(_isInstalled "${pkg}") == 0 ]]; then
             echo "${pkg} is already installed."
             continue
         fi
-	    printf "Package not installed:\n%s\n" "${toInstall[@]}"
+	    echo "Package not installed: ${pkg}"
 	    sudo dnf install --assumeyes "${pkg}"
     done
 }

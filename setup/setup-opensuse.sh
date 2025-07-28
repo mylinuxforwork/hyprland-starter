@@ -4,8 +4,37 @@
 # Packages
 # ----------------------------------------------------------
 
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-source share/packages/opensuse.sh
+packages=(
+    "wget"
+    "unzip"
+    "git"
+    "gum"    
+    "hyprland"
+    "hyprland-devel"
+    "hyprland-qtutils"
+    "waybar"
+    "rofi-wayland"
+    "kitty"
+    "dunst"
+    "thunar"
+    "xdg-desktop-portal-hyprland"
+    "libqt5-qtwayland"
+    "qt6-wayland"
+    "hyprpaper"
+    "hyprlock"
+    "firefox"
+    "fontawesome-fonts"
+    "vim"
+    "fastfetch"
+    "mozilla-fira-fonts" 
+    "fira-code-fonts" 
+    "jq"
+    "brightnessctl"
+    "NetworkManager-connection-editor"
+    "wireplumber"
+    "wlogout"
+    "flatpak"
+)
 
 # ----------------------------------------------------------
 # Colors
@@ -45,13 +74,9 @@ _installPackages() {
             echo "${pkg} is already installed."
             continue
         fi
-        toInstall+=("${pkg}")
+        echo "Package not installed: ${pkg}"
+        sudo zypper -n install "${pkg}"
     done
-    if [[ "${toInstall[@]}" == "" ]]; then
-        return
-    fi
-    printf "Package not installed:\n%s\n" "${toInstall[@]}"
-    sudo zypper -n install "${toInstall[@]}"
 }
 
 # ----------------------------------------------------------
