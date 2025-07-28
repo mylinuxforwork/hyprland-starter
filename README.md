@@ -1,13 +1,11 @@
 # ML4W Hyprland Starter 2.1
 
-> [!IMPORTANT]
-> These dotfiles are currently being revised and updated. This can lead to side effects during the installation or update.
-
-![hyprland-starter20](https://github.com/user-attachments/assets/71e387ff-68a6-4c4d-a98c-6d6a86fb900e)
 
 The ML4W Hyprland Starter package is the perfect starting point for your Hyprland customization experiments. The Hyprland Starter configuration works on all Linux distributions that support the dynamic tiling window manager Hyprland.
 
-You can find configurations here: https://github.com/mylinuxforwork/hyprland-starter/tree/main/dotfiles
+![hyprland-starter20](https://github.com/user-attachments/assets/71e387ff-68a6-4c4d-a98c-6d6a86fb900e)
+
+You can find the configuration here: https://github.com/mylinuxforwork/hyprland-starter/tree/main/dotfiles
 
 ## Installation
 
