@@ -146,11 +146,11 @@ window#waybar.empty #window {
  * Modules
  * ----------------------------------------------------- */
 
-.modules-left > widget:first-child > #workspaces {
+.modules-left > widget:first-child > :not(#dontusethisid) {
     margin-left: 0;
 }
 
-.modules-right > widget:last-child > #workspaces {
+.modules-right > widget:last-child > :not(#dontusethisid) {
     margin-right: 0;
 }
 
